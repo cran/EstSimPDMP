@@ -34,7 +34,7 @@ CondPdf.CC.interval(dat,x,epsilon,tmin,tmax,nbre,h,alpha,verbose,bound)
 }
 
 \references{
-Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the jump rate for piecewise-deterministic Markov processes} Preprint arXiv:1202.2212 (2012)
+Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the conditional distribution of the inter-jumping times for piecewise-deterministic Markov processes} Scandinavian Journal of Statistics, 2014.
 }
 
 \author{Romain Azais}
@@ -47,7 +47,7 @@ Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the j
 # CondPdf.CC.interval
 
 # Simulation of a PDMP with continuous state space
-dat<-Simu.PDMP(2.3,5000,verbose=FALSE)
+dat<-Simu.PDMP(2.3,500,verbose=FALSE)
 
 # Estimation of the conditional density given state=1.8
 CondPdf.CC.interval(dat,1.8,0.3,0.5,7.5,70,h=1/3,bound=7.8)

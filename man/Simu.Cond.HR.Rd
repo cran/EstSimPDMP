@@ -33,9 +33,9 @@ example<-function(x,t){
 	sqrt(sum(x^2))+t
 }
 
-# Simulations of 100 iid random variables with hazard rate=example given x=3
-Simu.Cond.HR(100,example,3)
+# Simulations of 50 iid random variables with hazard rate=example given x=3
+Simu.Cond.HR(50,example,3)
 
-# Simulations of 100 iid random variables with hazard rate=example given x=0.5
-# Simu.Cond.HR(100,example,0.5)
+# Simulations of 50 iid random variables with hazard rate=example given x=0.5
+# Simu.Cond.HR(50,example,0.5)
 }

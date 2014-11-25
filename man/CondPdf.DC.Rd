@@ -26,7 +26,7 @@ CondPdf.DC(dat,x,t,h,alpha,bound)
 }
 
 \references{
-Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the jump rate for piecewise-deterministic Markov processes} Preprint arXiv:1202.2212 (2012)
+Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the conditional distribution of the inter-jumping times for piecewise-deterministic Markov processes} Scandinavian Journal of Statistics, 2014.
 }
 
 \author{Romain Azais}
@@ -40,7 +40,7 @@ Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the j
 # CondPdf.DC
 
 # Simulation of a PDMP with discrete state space
-dat<-Simu.PDMP.DC(1,1000,verbose=FALSE)
+dat<-Simu.PDMP.DC(1,200,verbose=FALSE)
 
 # Estimation of the conditional density given state=2 at time 2
 CondPdf.DC(dat,2,2,bound=5.8)

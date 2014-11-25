@@ -16,8 +16,8 @@ This package deals with the estimation of the jump rate for piecewise-determinis
 \tabular{ll}{
 Package: \tab EstSimPDMP\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab Feb 2012\cr
+Version: \tab 1.2\cr
+Date: \tab Nov 2014\cr
 License: \tab GPL (>=2)\cr
 }
 Simu.Cond.HR(n,lambda,x)
@@ -28,11 +28,11 @@ CondPdf.CC.interval(data,x,epsilon,tmin,tmax,N)
 }
 
 \author{
-Romain AZAIS <romain.azais@inria.fr>
+Romain AZAIS <romain.azais@gmail.com>
 }
 
 \references{
-Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the jump rate for piecewise-deterministic Markov processes} Preprint (2012)
+Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the conditional distribution of the inter-jumping times for piecewise-deterministic Markov processes} Scandinavian Journal of Statistics, 2014.
 }
 
 \seealso{
@@ -44,17 +44,17 @@ Azais R., Dufour F., and Gegout-Petit A. \emph{Nonparametric estimation of the j
 example<-function(x,t){
 	sqrt(sum(x^2))+t
 }
-# Simulations of 100 iid random variables with hazard rate=example given x=3
-Simu.Cond.HR(100,example,3)
+# Simulations of 50 iid random variables with hazard rate=example given x=3
+Simu.Cond.HR(50,example,3)
 
-# Simulations of 100 iid random variables with hazard rate=example given x=0.5
-# Simu.Cond.HR(100,example,0.5)
+# Simulations of 50 iid random variables with hazard rate=example given x=0.5
+# Simu.Cond.HR(50,example,0.5)
 
 
 # CondPdf.DC.interval
 
 # Simulation of a PDMP with discrete state space
-dat<-Simu.PDMP.DC(1,5000,verbose=FALSE)
+dat<-Simu.PDMP.DC(1,500,verbose=FALSE)
 # Estimation of the conditional density given state=2
 CondPdf.DC.interval(dat,2,0.4,5.5,70,alpha=1/4,bound=5.8)
 
@@ -73,7 +73,7 @@ points(a,gr,"l",col="blue")
 # CondPdf.CC.interval
 
 # Simulation of a PDMP with continuous state space
-dat<-Simu.PDMP(2.3,5000,verbose=FALSE)
+dat<-Simu.PDMP(2.3,500,verbose=FALSE)
 # Estimation of the conditional density given state=1.8
 CondPdf.CC.interval(dat,1.8,0.3,0.5,7.5,70,h=1/3,bound=7.8)
 

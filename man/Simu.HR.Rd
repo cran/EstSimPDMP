@@ -33,6 +33,6 @@ Simu.HR(N,lambda,verbose)
 example<-function(x){
 	x
 }
-# Simulation of 100 iid random variables with hazard rate=example
-Simu.HR(100,example)
+# Simulation of 50 iid random variables with hazard rate=example
+Simu.HR(50,example)
 }

@@ -30,8 +30,8 @@ Andersen P.K., Borgan O., Gill R.D., Keiding N. \emph{Statistical models based o
 \examples{
 # CHR
 
-# Simulation of 100 independent exponential random variables
-dat<-rexp(100,1)
+# Simulation of 50 independent exponential random variables
+dat<-rexp(50,1)
 
 # Nelson-Aalen estimator of cumulative hazard rate at time 2
 CHR(dat,2)

@@ -37,8 +37,8 @@ Andersen P.K., Borgan O., Gill R.D., Keiding N. \emph{Statistical models based o
 \examples{
 # HR
 
-# Simulation of 100 independent exponential random variables
-dat<-rexp(100,1)
+# Simulation of 50 independent exponential random variables
+dat<-rexp(50,1)
 
 # Estimation of the exponential hazard rate at time 0.4
 HR(dat,0.4)

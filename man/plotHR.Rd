@@ -42,8 +42,8 @@ Andersen P.K., Borgan O., Gill R.D., Keiding N. \emph{Statistical models based o
 \examples{
 # plotHR
 
-# Simulation of 1000 independent exponential random variables
-dat<-rexp(1000,1)
+# Simulation of 100 independent exponential random variables
+dat<-rexp(100,1)
 
 # Estimation of the exponential hazard rate between 0 and 2
 plotHR(dat,1,2,100,h=0.2)
